@@ -18,7 +18,7 @@
 }
 
 .animate{
-  animation: jump 1.5s;
+  animation: jump 1.1s;
 }
 
 @keyframes jump{
