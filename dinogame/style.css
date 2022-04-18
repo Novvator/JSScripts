@@ -7,8 +7,15 @@
   padding: 30px;
   margin: 30px;
   width: 700px;
-  height: 500px;
+  height: 534px;
   border: 1px solid black;
+}
+
+#replay {
+  font-size: 30px;
+  display: flex-center;
+  text-align: center;
+  visibility: hidden;
 }
 
 #character{
