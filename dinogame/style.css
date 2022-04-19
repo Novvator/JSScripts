@@ -7,8 +7,10 @@
   padding: 30px;
   margin: 30px;
   width: 700px;
-  height: 534px;
+  height: 608px;
   border: 1px solid black;
+  position: relative;
+  overflow: hidden;
 }
 
 #replay {
@@ -19,36 +21,61 @@
 }
 
 #character{
-  position: relative;
-  top: 330px;
-  right:40px;
+  position: absolute;
+  bottom: 0px;
+  left:0px;
 }
 
-.animate{
+.animate-jump{
   animation: jump 1.1s;
 }
 
 @keyframes jump{
-  0%{top: 330px;}
-  30%{top: 260px;}
-  50%{top: 255px;}
-  70%{top: 260px;}
-  100%{top: 330px;}
+  0%{bottom: 0px;}
+  30%{bottom: 70px;}
+  50%{bottom: 75px;}
+  70%{bottom: 70px;}
+  100%{bottom: 0px;}
 }
 
-#blockpng{
+#meteor {
+  position: absolute;
+  bottom: 200px;
+  right: 0px;
+
+}
+
+#meteor-png {
   height: 70px;
   width: auto;
 }
 
-#block{
-  position: relative;
-  top: 236px;
-  left: 630px;
-  animation: block 1.5s infinite linear;
+.animate-meteor{
+  animation: meteor-anim 2s infinite linear;
 }
 
-@keyframes block{
-  0%{left:630px;}
-  100%{left:-100px}
+@keyframes meteor-anim{
+  0%{left: 750px;}
+  100%{left: -200px;}
 }
+
+#block{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+#block-png{
+  height: 60px;
+  width: auto;
+}
+
+.animate-block{
+  animation: block-anim 4s infinite linear;
+}
+
+@keyframes block-anim{
+  0%{left: 900px;}
+  100%{left: -700px;}
+}
+
