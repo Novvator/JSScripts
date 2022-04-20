@@ -3,18 +3,46 @@
   margin: 0px;
 }
 
+body {
+  background-image: url("/img/background.png");
+  background-repeat: no-repeat;
+  background-size: 816px 480px;
+}
+
 #game{
-  padding: 30px;
-  margin: 30px;
-  width: 700px;
-  height: 608px;
+  padding: 0px;
+  margin: 0px;
+  width: 816px;
+  height: 480px;
   border: 1px solid black;
   position: relative;
   overflow: hidden;
+  background-image: 
+  url("/img/trees1.png"),
+  url("/img/mountains1.png"),
+  url("/img/mountain.png");
+  background-repeat: repeat-x,
+  repeat-x,
+  repeat-x;
+  background-position: 0% 92%,
+  0% 92%,
+  0% 92%;
+  
+
+}
+
+.animate-bg{
+  animation: bg 2s infinite linear;
+}
+
+@keyframes bg{
+  0% {background-position: 0% 92%;}
+  100% {background-position: -100% 92%;}
 }
 
 #replay {
   font-size: 30px;
+  font-family: serif;
   display: flex-center;
   text-align: center;
   visibility: hidden;
@@ -42,7 +70,7 @@
   position: absolute;
   bottom: 200px;
   right: 0px;
-
+  
 }
 
 #meteor-png {
@@ -59,22 +87,22 @@
   100%{left: -200px;}
 }
 
-#block{
+#rock{
   position: absolute;
   bottom: 0px;
   right: 0px;
 }
 
-#block-png{
+#rock-png{
   height: 60px;
   width: auto;
 }
 
-.animate-block{
-  animation: block-anim 4s infinite linear;
+.animate-rock{
+  animation: rock-anim 4s infinite linear;
 }
 
-@keyframes block-anim{
+@keyframes rock-anim{
   0%{left: 900px;}
   100%{left: -700px;}
 }
