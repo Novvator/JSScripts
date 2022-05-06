@@ -4,11 +4,15 @@
 }
 
 body {
-  background-image: url("/img/background.png");
+  background-image: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: 816px 480px;
 }
 
+div {
+  margin: 0;
+  padding: 0;
+}
 #game{
   padding: 0px;
   margin: 0px;
@@ -18,9 +22,9 @@ body {
   position: relative;
   overflow: hidden;
   background-image: 
-  url("/img/trees1.png"),
-  url("/img/mountains1.png"),
-  url("/img/mountain.png");
+  url("../img/trees1.png"),
+  url("../img/mountains1.png"),
+  url("../img/mountain.png");
   background-repeat: repeat-x,
   repeat-x,
   repeat-x;
